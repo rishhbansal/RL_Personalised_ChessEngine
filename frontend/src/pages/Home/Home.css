@@ -1,0 +1,147 @@
+/* div{
+    justify-content: center;
+    position:relative;
+} */
+ @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&display=swap');
+
+.home {
+  background: #111214;
+  color: #e8e6e1;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Hero */
+
+.hero {
+  padding: 90px 24px 70px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 3.8rem;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: #ffffff;
+}
+
+.hero-sub {
+  margin-top: 22px;
+  color: #a1a1aa;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+/* About section */
+
+.about {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 50px 24px 130px;
+  border-top: 1px solid #262629;
+}
+
+.about-eyebrow {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  color: #c9a86a;
+  margin-top: 56px;
+  margin-bottom: 22px;
+}
+
+.about-intro h2 {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 1.25;
+  margin: 0 0 24px;
+  color: #f4f4f5;
+}
+
+.about-intro p {
+  color: #b8b7b3;
+  line-height: 1.75;
+  font-size: 1.22rem;
+  margin: 0 0 16px;
+  max-width: 780px;
+}
+
+/* Move list */
+
+.about-moves {
+  margin-top: 60px;
+  border-top: 1px solid #262629;
+}
+
+.move-row {
+  display: flex;
+  align-items: baseline;
+  gap: 28px;
+  padding: 30px 0;
+  border-bottom: 1px solid #262629;
+}
+
+.move-notation {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.05rem;
+  color: #c9a86a;
+  min-width: 0px;
+  flex-shrink: 0;
+}
+
+.move-text h3 {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin: 0 0 8px;
+  color: #f4f4f5;
+}
+
+.move-text p {
+  color: #94a3b8;
+  font-size: 1.15rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Philosophy line */
+
+.about-philosophy {
+  margin-top: 60px;
+  padding-top: 44px;
+  border-top: 1px solid #262629;
+}
+
+.about-philosophy p {
+  font-family: 'Fraunces', serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.55rem;
+  line-height: 1.7;
+  color: #e2e8f0;
+  max-width: 760px;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-intro h2 {
+    font-size: 1.8rem;
+  }
+
+  .move-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .about-philosophy p {
+    font-size: 1.25rem;
+  }
+}

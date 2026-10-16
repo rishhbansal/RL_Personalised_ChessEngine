@@ -1,0 +1,23 @@
+.eval-graph {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 16px 16px 16px 12px; /* Smoothed out left/right padding balance */
+}
+
+.eval-graph-header {
+
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+.eval-graph-header h3 {
+  color: #e2e8f0;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.eval-graph-status {
+  font-size: 12.5px;
+  font-weight: 600;
+}

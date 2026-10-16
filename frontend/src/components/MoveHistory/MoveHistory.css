@@ -1,0 +1,45 @@
+.move-history {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  padding: 22px;
+}
+.move-history h3 {
+  color: #f1f5f9;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+.move-history-list {
+  overflow-y: auto;
+  max-height: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.move-history-empty {
+  color: #94a3b8;
+  font-size: 15px;
+}
+.move-row {
+  display: grid;
+  grid-template-columns: 42px 1fr 1fr;
+  padding: 7px 12px;
+  border-radius: 8px;
+  font-size: 15.5px;
+}
+.move-row:hover {
+  background: #263449;
+}
+.move-num {
+  color: #94a3b8;
+  font-weight: 600;
+}
+.move-san {
+  color: #f1f5f9;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-weight: 600;
+}
+.move-san.black {
+  color: #cbd5e1;
+}

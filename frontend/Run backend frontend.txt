@@ -1,0 +1,63 @@
+# HOW TO RUN THE CHESS AI WEB APPLICATION
+
+Follow these steps to launch and play against your trained model in the browser.
+
+---
+
+### Step 1: Start the Backend Server (FastAPI + AI Engine)
+
+Open a terminal (PowerShell or Command Prompt) and run:
+
+```powershell
+cd "c:\Users\Rishabh\Downloads\SOC_AIML_20-main\RL_Personalised_ChessEngine\backend"
+python -m uvicorn app:app --host 127.0.0.1 --port 8001
+```
+
+You should see:
+```text
+Loaded model weights from backend/engine/weights/...
+INFO: Uvicorn running on http://127.0.0.1:8001
+INFO: Application startup complete.
+```
+
+---
+
+### Step 2: Start the Frontend UI (Vite + React)
+
+Open a **second** terminal and run:
+
+```powershell
+cd "c:\Users\Rishabh\Downloads\SOC_AIML_20-main\RL_Personalised_ChessEngine\frontend"
+npm run dev
+```
+
+You will see:
+```text
+  VITE v8.1.5  ready in ... ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+```
+
+---
+
+### Step 3: Play in Your Browser
+
+1. Open your web browser (Chrome, Brave, Edge, etc.) and go to:
+   **`http://localhost:5173`**
+2. Click **Play** or start a new match.
+3. Your trained NNUE value network and MCTS policy head will generate moves, evaluate the board in real time, and display candidate moves!
+
+---
+
+### Sharing Over Your Local Network / Mobile (Optional)
+If you want to test on another device (like your phone on the same Wi-Fi):
+1. In the backend terminal, start with host `0.0.0.0`:
+   ```powershell
+   python -m uvicorn app:app --host 0.0.0.0 --port 8001
+   ```
+2. In the frontend terminal:
+   ```powershell
+   npm run dev -- --host
+   ```
+3. Open the Network URL shown in the Vite output (e.g. `http://192.168.x.x:5173`) on your phone.
